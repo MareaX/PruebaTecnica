@@ -1,9 +1,20 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.PruebaTecnica" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorTertiary">@color/colorTertiary</item>
+        <item name="colorBackgroundPrimary">@color/colorBackgroundPrimary</item>
+        <item name="colorBackgroundSecondary">@color/colorBackgroundSecondary</item>
     </style>
 
     <style name="Theme.PruebaTecnica" parent="Base.Theme.PruebaTecnica" />
+
+    <attr name="primaryColor" format="color|reference" />
+    <attr name="colorSecondary" format="color|reference" />
+    <attr name="colorTertiary" format="color|reference" />
+
+    <attr format="color|reference" name="colorBackgroundPrimary"/>
+    <attr format="color|reference" name="colorBackgroundSecondary"/>
+    <attr format="color|reference" name="dividerColor"/>
 </resources>

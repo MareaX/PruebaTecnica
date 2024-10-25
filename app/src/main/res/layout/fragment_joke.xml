@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBackgroundPrimary"
     tools:context=".jokes.presentation.joke.JokeFragment">
 
     <TextView
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/dim_16"
         android:layout_marginTop="@dimen/dim_16"
+        android:background="@color/colorBackgroundSecondary"
         android:padding="@dimen/dim_8"
         android:text="@string/hello_blank_fragment"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,6 +26,8 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/dim_16"
         android:layout_marginTop="@dimen/dim_16"
+        android:background="@color/colorBackgroundSecondary"
+
         android:padding="@dimen/dim_8"
         android:text="@string/hello_blank_fragment"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,6 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/dim_16"
         android:layout_marginTop="@dimen/dim_16"
+        android:background="@color/colorBackgroundSecondary"
         android:padding="@dimen/dim_8"
         android:text="@string/hello_blank_fragment"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,6 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/dim_16"
         android:layout_marginTop="@dimen/dim_16"
+        android:background="@color/colorBackgroundSecondary"
         android:padding="@dimen/dim_8"
         android:text="@string/hello_blank_fragment"
         app:layout_constraintEnd_toEndOf="parent"

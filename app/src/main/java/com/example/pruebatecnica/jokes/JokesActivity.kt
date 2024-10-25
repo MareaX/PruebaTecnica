@@ -44,7 +44,7 @@ class JokesActivity : AppCompatActivity() {
         navController.addOnDestinationChangedListener { _, destination, _ ->
             when (destination.id) {
                 R.id.category_fragment -> {
-                    supportActionBar?.setDisplayHomeAsUpEnabled(true)
+                    supportActionBar?.setDisplayHomeAsUpEnabled(false)
                 }
 
                 else -> {
