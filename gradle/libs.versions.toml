@@ -1,0 +1,76 @@
+[versions]
+agp = "8.0.2"
+kotlin = "1.9.0"
+safeargs = "2.5.0"
+kotlinX = "1.4.3"
+kapt = "2.0.0"
+parcelize = "2.0.0"
+constraintLayoutVersion = "1.1.3"
+gsonVersion = "2.8.8"
+roomVersion = "2.4.0"
+androidXNavigation = "2.8.3"
+androidXActivity = "1.1.0"
+androidXFragment = "1.5.0"
+
+materialVersion = "1.4.0"
+supportLibVersion = "1.0.0"
+androidXAppCompat = "1.2.0-rc02"
+androidXCore = "1.2.0"
+androidXCardView = "1.0.0"
+androidXRecyclerView = "1.2.1"
+glideVersion = "4.11.0"
+hiltVersion = "2.48"
+retrofitVersion = "2.9.0"
+okHttpVersion = "4.9.3"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+
+
+[libraries]
+androidx-core = { group = "androidx.core", name = "core", version.ref = "androidXCore" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidXCore" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "supportLibVersion" }
+material = { group = "com.google.android.material", name = "material", version.ref = "materialVersion" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "androidXActivity" }
+androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "androidXActivity" }
+androidx-fragment = { group = "androidx.fragment", name = "fragment", version.ref = "androidXFragment" }
+androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "androidXFragment" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintLayoutVersion" }
+
+androidx-appcompat-resources = { group = "androidx.appcompat", name = "appcompat-resources", version.ref = "androidXAppCompat" }
+androidx-cardview = { group = "androidx.cardview", name = "cardview", version.ref = "androidXCardView" }
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "androidXRecyclerView" }
+
+androidx-navigation = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "androidXNavigation" }
+androidx-navigation-ui = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "androidXNavigation" }
+
+androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "roomVersion" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomVersion" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomVersion" }
+
+dagger-hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hiltVersion" }
+dagger-hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hiltVersion" }
+
+retrofit2 = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofitVersion" }
+retrofit2-converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofitVersion" }
+google-gson = { group = "com.google.code.gson", name = "gson", version.ref = "gsonVersion" }
+
+okhttp3 = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okHttpVersion" }
+okhttp3-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okHttpVersion" }
+
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinX" }
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinX" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
+android-library = { id = "com.android.library", version.ref = "agp" }
+dagger-hilt = { id = "com.google.dagger.hilt.android", version.ref = "hiltVersion" }
+navigation-safeargs = { id = "androidx.navigation.safeargs.kotlin", version.ref = "safeargs" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kapt" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "parcelize" }

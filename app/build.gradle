@@ -1,0 +1,86 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.parcelize)
+    alias(libs.plugins.kotlin.kapt)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.dagger.hilt)
+    alias(libs.plugins.navigation.safeargs)
+}
+
+android {
+    namespace 'com.example.pruebatecnica'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.pruebatecnica"
+        minSdk 28
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    viewBinding {
+        enable = true
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+}
+
+dependencies {
+
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.core
+    implementation libs.androidx.appcompat
+    implementation libs.material
+    implementation libs.androidx.activity
+    implementation libs.androidx.activity.ktx
+    implementation libs.androidx.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.junit
+    androidTestImplementation libs.androidx.espresso.core
+
+    implementation libs.androidx.fragment
+    implementation libs.androidx.fragment.ktx
+    implementation libs.androidx.appcompat.resources
+    implementation libs.androidx.cardview
+    implementation libs.androidx.recyclerview
+    implementation libs.androidx.navigation
+    implementation libs.androidx.navigation.ui
+
+    //Room
+    implementation libs.androidx.room.runtime
+    kapt libs.androidx.room.compiler
+    implementation libs.androidx.room.ktx
+    annotationProcessor libs.androidx.room.compiler
+    implementation libs.google.gson
+
+    //Hilt
+    implementation libs.dagger.hilt
+    kapt libs.dagger.hilt.compiler
+
+    //retrofit
+    implementation libs.retrofit2
+    implementation libs.retrofit2.converter.gson
+
+    //coroutines
+    implementation libs.kotlinx.coroutines.core
+    implementation  libs.kotlinx.coroutines.android
+
+    implementation project(':retrofitLib')
+}
