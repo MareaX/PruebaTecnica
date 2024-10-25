@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.pruebatecnica.databinding.FragmentCategoryBinding
 import com.example.pruebatecnica.jokes.presentation.JokesViewModel
@@ -26,7 +27,9 @@ class CategoryFragment : Fragment() {
     }
 
     private fun goToJoke(it: String) {
-        CategoryFragmentDirections.actionCategoryFragmentToJokeFragment(it)
+        findNavController().navigate(
+            CategoryFragmentDirections.actionCategoryFragmentToJokeFragment(it)
+        )
     }
 
     override fun onCreateView(

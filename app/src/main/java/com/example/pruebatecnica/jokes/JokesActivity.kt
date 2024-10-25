@@ -44,7 +44,7 @@ class JokesActivity : AppCompatActivity() {
         navController.addOnDestinationChangedListener { _, destination, _ ->
             when (destination.id) {
                 R.id.category_fragment -> {
-                    supportActionBar?.setDisplayHomeAsUpEnabled(false)
+                    supportActionBar?.setDisplayHomeAsUpEnabled(true)
                 }
 
                 else -> {
@@ -56,6 +56,7 @@ class JokesActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
+        super.onBackPressed()
         when (navController.currentDestination?.id) {
             R.id.category_fragment -> Unit
             else -> {

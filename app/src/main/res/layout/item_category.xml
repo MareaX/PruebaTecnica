@@ -10,6 +10,7 @@
         android:id="@+id/tv_category_name"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dim_0"
+        android:padding="@dimen/dim_16"
         tools:text="ejemplo"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintTop_toTopOf="parent"

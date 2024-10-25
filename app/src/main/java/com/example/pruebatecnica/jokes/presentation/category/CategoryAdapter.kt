@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pruebatecnica.databinding.ItemCategoryBinding
 
+
 class CategoryAdapter(val clickAction: (item: String) -> Unit) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
@@ -39,7 +40,9 @@ class CategoryAdapter(val clickAction: (item: String) -> Unit) :
 
         fun bind(item: String) {
             binding.tvCategoryName.text = item
-            clickAction(item)
+            binding.clItemCategory.setOnClickListener {
+                clickAction(item)
+            }
         }
     }
 }
