@@ -32,6 +32,7 @@ class JokesActivity : AppCompatActivity() {
     private fun initView() {
         _binding = ActivityJokesBinding.inflate(layoutInflater)
         setContentView(_binding.root)
+        setSupportActionBar(_binding.cfToolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.show()
     }
@@ -56,10 +57,10 @@ class JokesActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        super.onBackPressed()
         when (navController.currentDestination?.id) {
             R.id.category_fragment -> Unit
             else -> {
+                super.onBackPressed()
                 navController.popBackStack()
             }
         }
